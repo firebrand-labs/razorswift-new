@@ -9,6 +9,8 @@ const theme = createTheme({
       mainone: "#672376",
       secbg: "#FCD3D1",
       thirdsec: "#EE5064",
+      purp: "#672376",
+      pinkint: "#DAB0E3",
     },
     // You can also customize other palette colors here if needed
     typography: {

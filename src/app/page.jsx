@@ -5,6 +5,9 @@ import Secsec from "../components/updateseccont";
 import Whatwe from "../components/whatwedo";
 import Careersec from "../components/careersec";
 import Whysec from "../components/whysec";
+import Getstart from "../components/getstart";
+import Footer from "../components/footer";
+import Internsec from "../components/internsec";
 const page = () => {
   return (
     <div>
@@ -13,7 +16,10 @@ const page = () => {
       <Secsec />
       <Whatwe />
       <Careersec />
+      <Internsec />
       <Whysec />
+      <Getstart />
+      <Footer />
     </div>
   );
 };

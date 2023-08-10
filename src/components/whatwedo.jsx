@@ -7,6 +7,7 @@ const whatwedo = () => {
     <Box
       sx={{
         display: "flex",
+        justifyContent: "space-between",
         backgroundColor: "primary.thirdsec",
         pt: "5%",
         pb: "5%",
@@ -22,6 +23,7 @@ const whatwedo = () => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
+          width: "50%",
         }}
       >
         <Box>
