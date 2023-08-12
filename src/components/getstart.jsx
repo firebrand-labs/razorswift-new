@@ -5,6 +5,15 @@ import Link from "@mui/material/Link";
 import Image from "next/image";
 import fivemen from "../../public/images/banner-image-2.svg";
 const getstart = () => {
+  const fonts = {
+    fontSize: "clamp(40px, 3vw, 100px)",
+  };
+  const fontstwo = {
+    fontSize: "clamp(20px, 1.5vw, 28px)",
+  };
+  const lastimg = {
+    width: "40vw",
+  };
   return (
     <Box
       sx={{
@@ -12,69 +21,73 @@ const getstart = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        pt: 10,
-        pb: 10,
+        height: "100vh",
+        border: "1px solid",
+        justifyContent: "center",
       }}
     >
-      <Typography
-        sx={{
-          fontSize: "80px",
-          fontFamily: "Bebas Neue",
-          color: "primary.purp",
-          lineHeight: "1.0",
-          mb: "2%",
-        }}
+      <Box
+        sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
       >
-        READY TO GET STARTED?
-      </Typography>
-      <Typography sx={{ fontSize: "28px", fontFamily: "urbanist", mb: "2%" }}>
-        Get identified, upskill. Grow your business and brand.
-      </Typography>
-      <Box sx={{ display: "flex", gap: 5, mb: "5%" }}>
-        <Box
+        <Typography
+          style={fonts}
           sx={{
-            backgroundColor: "primary.main",
-            borderRadius: "200px",
-            padding: "10px 20px",
-            display: "flex",
-            alignItems: "center",
+            fontFamily: "Bebas Neue",
+            color: "primary.purp",
+            lineHeight: "1.0",
           }}
         >
-          <Link
-            underline="none"
+          READY TO GET STARTED?
+        </Typography>
+        <Typography style={fontstwo} sx={{ fontFamily: "urbanist" }}>
+          Get identified, upskill. Grow your business and brand.
+        </Typography>
+        <Box sx={{ display: "flex", gap: 5 }}>
+          <Box
             sx={{
-              fontSize: "20px",
-              fontFamily: "urbanist",
+              backgroundColor: "primary.main",
+              borderRadius: "200px",
+              padding: "10px 20px",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <Link
+              underline="none"
+              sx={{
+                fontSize: "15px",
+                fontFamily: "urbanist",
 
-              color: "common.white",
-            }}
-          >
-            Build Your Profile
-          </Link>
-        </Box>
-        <Box
-          sx={{
-            border: "2px solid",
-            borderColor: "primary.main",
-            borderRadius: "200px",
-            padding: "10px 20px",
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
-          <Link
-            underline="none"
+                color: "common.white",
+              }}
+            >
+              Build Your Profile
+            </Link>
+          </Box>
+          <Box
             sx={{
-              fontSize: "20px",
-              fontFamily: "urbanist",
-              color: "primary.main",
+              border: "2px solid",
+              borderColor: "primary.main",
+              borderRadius: "200px",
+              padding: "10px 20px",
+              display: "flex",
+              alignItems: "center",
             }}
           >
-            Get a Demo
-          </Link>
+            <Link
+              underline="none"
+              sx={{
+                fontSize: "15px",
+                fontFamily: "urbanist",
+                color: "primary.main",
+              }}
+            >
+              Get a Demo
+            </Link>
+          </Box>
         </Box>
+        <Image style={lastimg} src={fivemen} />
       </Box>
-      <Image src={fivemen} />
     </Box>
   );
 };

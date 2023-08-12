@@ -6,15 +6,25 @@ import Box from "@mui/material/Box";
 import bannerimg from "../../public/images/Banner-Image.png";
 import Image from "next/image";
 import { Container } from "@mui/material";
-import "../styles/heroban.css";
+
 const hero = () => {
+  const fonts = {
+    fontSize: "clamp(50px, 4vw, 91px)",
+  };
+  const parag = {
+    fontSize: "clamp(22px, 1.8vw, 28px)",
+  };
+  const banimg = {
+    width: "72vw",
+    height: "auto",
+  };
   return (
-    <Stack sx={{ pt: "1%", pl: "1%", pr: "1%" }}>
-      <Stack>
+    <Stack sx={{ minHeight: "100vh" }}>
+      <Stack sx={{ zIndex: "1", marginTop: "120px", marginLeft: "30px" }}>
         <Stack sx={{ mb: 2 }}>
           <Typography
+            style={fonts}
             sx={{
-              fontSize: 50,
               color: "primary.mainone",
               lineHeight: "1.0",
               fontFamily: "Bebas Neue",
@@ -32,8 +42,8 @@ const hero = () => {
             TALENT.
           </Typography>
           <Typography
+            style={fonts}
             sx={{
-              fontSize: 50,
               color: "primary.mainone",
               lineHeight: "1.0",
               fontFamily: "Bebas Neue",
@@ -53,10 +63,10 @@ const hero = () => {
             fontFamily: "Urbanist",
           }}
         >
-          <Box component="span" sx={{ fontSize: 28, lineHeight: 1.0 }}>
+          <Box style={parag} component="span" sx={{ lineHeight: 1.0 }}>
             India's first unified ML enabled marketplace
           </Box>
-          <Box component="span" sx={{ fontSize: 28, lineHeight: 1.0 }}>
+          <Box style={parag} component="span" sx={{ lineHeight: 1.0 }}>
             connecting aspirants with businesses.
           </Box>
         </Typography>
@@ -102,9 +112,9 @@ const hero = () => {
           </Link>
         </Stack>
       </Stack>
-      <Stack sx={{ alignSelf: "flex-end", mt: -4 }}>
+      <Stack sx={{ position: "absolute", bottom: "0", right: "0" }}>
         <Box component="span">
-          <Image src={bannerimg} sx={{}} />
+          <Image style={banimg} src={bannerimg} sx={{}} />
         </Box>
       </Stack>
     </Stack>

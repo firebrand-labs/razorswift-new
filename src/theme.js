@@ -11,6 +11,7 @@ const theme = createTheme({
       thirdsec: "#EE5064",
       purp: "#672376",
       pinkint: "#DAB0E3",
+      dropdown: "#DCBDE3",
     },
     // You can also customize other palette colors here if needed
     typography: {

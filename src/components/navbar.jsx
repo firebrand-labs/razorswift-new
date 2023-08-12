@@ -5,6 +5,7 @@ import profilePic from "../../public/images/secondary-logo.png";
 import loginicon from "../../public/images/login-icon-3036.png";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
+
 export default function Home() {
   return (
     <Box
@@ -13,6 +14,8 @@ export default function Home() {
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
+        position: "fixed",
+        width: "100vw",
       }}
     >
       <Image src={profilePic} alt="logo" />
@@ -22,6 +25,7 @@ export default function Home() {
           flexDirection: "row",
           alignItems: "center",
           gap: 3,
+          marginRight: "40px",
         }}
       >
         <Box

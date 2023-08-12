@@ -3,19 +3,26 @@ import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import sshot from "../../public/images/screenshot.png";
 const whatwedo = () => {
+  const fonts = {
+    fontSize: "clamp(50px, 4vw, 64px)",
+  };
+  const fontstwo = {
+    fontSize: "clamp(50px, 4.5vw, 72px)",
+  };
+  const fontsthree = {
+    fontSize: "clamp(15px, 1.3vw, 20px)",
+  };
   return (
     <Box
       sx={{
         display: "flex",
         justifyContent: "space-between",
         backgroundColor: "primary.thirdsec",
-        pt: "5%",
-        pb: "5%",
-        pl: "1%",
-        pr: "1%",
+        overflow: "hidden",
+        height: "100vh",
       }}
     >
-      <Box>
+      <Box sx={{ padding: "50px", display: "flex", alignItems: "center" }}>
         <Image src={sshot} />
       </Box>
       <Box
@@ -24,13 +31,14 @@ const whatwedo = () => {
           flexDirection: "column",
           justifyContent: "space-between",
           width: "50%",
+          padding: "50px",
         }}
       >
         <Box>
           <Typography
             variant="p"
+            style={fonts}
             sx={{
-              fontSize: "64px",
               color: "common.white",
               fontFamily: "Bebas Neue",
             }}
@@ -43,9 +51,9 @@ const whatwedo = () => {
         </Box>
         <Box>
           <Typography
+            style={fontstwo}
             variant="p"
             sx={{
-              fontSize: "72px",
               fontFamily: "Bebas Neue",
               color: "common.white",
             }}
@@ -53,12 +61,13 @@ const whatwedo = () => {
             ENROLL
           </Typography>
           <Typography
-            sx={{ fontSize: "20px", color: "common.white", mb: "3%" }}
+            style={fontsthree}
+            sx={{ color: "common.white", mb: "3%", fontWeight: "600" }}
           >
             Start by signing up with us, if you are looking to score big. Sign
             up is as easy as sending a message on WhatsApp.
           </Typography>
-          <Typography sx={{ fontSize: "20px", color: "common.white" }}>
+          <Typography style={fontsthree} sx={{ color: "common.white" }}>
             Let's address the aspirants first, and talk about a simple signing
             up process and in a broader sense what the company offers to them -
             we will keep this within 3 lines. In this point, we can also mention
