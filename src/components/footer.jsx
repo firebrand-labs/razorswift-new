@@ -9,6 +9,9 @@ import fb from "../../public/images/facebook-logo.svg";
 import linkedin from "../../public/images/linkedin-logo.svg";
 import insta from "../../public/images/instagram-logo.svg";
 const footer = () => {
+  const fonts = {
+    fontSize: "clamp(40px,3.1vw,64px)",
+  };
   const fontstyle = {
     color: "white",
     fontSize: "24px",
@@ -37,6 +40,7 @@ const footer = () => {
         }}
       >
         <Typography
+          style={fonts}
           sx={{
             color: "common.white",
             fontSize: "64px",

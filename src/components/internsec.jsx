@@ -7,13 +7,15 @@ import aspiratvect from "../../public/images/aspirants-vector.svg";
 import internmain from "../../public/images/placeholder-image.png";
 import internone from "../../public/images/icon-1.svg";
 import Whattoexp from "./whattoexp";
-import data from "../utilities/what-to-expect";
+import data from "../utilities/intern.js";
 
-const internsec = () => {
+const internsec = ({ contchnage }) => {
+  console.log(contchnage);
   const imgs = {
     width: "500px",
     height: "initial",
   };
+  // const [selectedId, setSelectedId] = useState(nestedData[0].id);
   return (
     <Box
       sx={{
@@ -34,9 +36,13 @@ const internsec = () => {
         <Box sx={{ width: "50%" }}>
           <Image src={aspiratvect} />
           <Typography
-            sx={{ fontSize: "55px", fontFamily: "urbanist", fontWeight: "500" }}
+            sx={{
+              fontSize: "55px",
+              fontFamily: "urbanist",
+              fontWeight: "500",
+            }}
           >
-            Internships, Interviews,
+            {contchnage.firstsec.toptitleone}
           </Typography>
           <Typography
             sx={{
@@ -79,6 +85,7 @@ const internsec = () => {
             </Link>
           </Box>
         </Box>
+
         <Box>
           <Image style={imgs} src={internmain} />
         </Box>

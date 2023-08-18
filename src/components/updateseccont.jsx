@@ -12,10 +12,8 @@ const updateseccont = () => {
         alignItems: "center",
         gap: 3,
         backgroundColor: "primary.secbg",
-        pt: "1%",
-        pb: "1%",
-        pl: "1%",
-        pr: "1%",
+        p: "10px",
+        height: "50px",
       }}
     >
       <Typography

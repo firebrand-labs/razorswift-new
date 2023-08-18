@@ -1,7 +1,7 @@
 import React from "react";
 
 import Herosec from "../components/heroban";
-import Secsec from "../components/updateseccont";
+
 import Whatwe from "../components/whatwedo";
 import Cardropdown from "../components/career-dropdown";
 import Careersec from "../components/careersec";
@@ -10,16 +10,20 @@ import Getstart from "../components/getstart";
 import Footer from "../components/footer";
 import Layout from "../../src/helpers/Layout";
 import Internsec from "../components/internsec";
+import Pathways from "../components/pathwyas";
+import Test from "../components/test";
 const page = () => {
   return (
     <div>
       <Layout>
         <Herosec />
-        <Secsec />
-        <Whatwe />
-        <Cardropdown />
+
+        {/* <Whatwe /> */}
+        {/* <Cardropdown /> */}
         {/* <Careersec /> */}
-        <Internsec />
+        {/* <Internsec /> */}
+        <Test />
+        <Pathways />
         <Whysec />
         <Getstart />
       </Layout>

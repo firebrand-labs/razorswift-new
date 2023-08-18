@@ -12,6 +12,7 @@ const theme = createTheme({
       purp: "#672376",
       pinkint: "#DAB0E3",
       dropdown: "#DCBDE3",
+      accord: "#E5BED5",
     },
     // You can also customize other palette colors here if needed
     typography: {

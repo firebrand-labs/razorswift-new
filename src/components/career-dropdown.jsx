@@ -29,7 +29,7 @@ const Cardropdown = () => {
               borderRadius: "100px",
             }}
           >
-            Aspiringss
+            Aspiring
           </Box>{" "}
           for a dream career ?
         </Typography>

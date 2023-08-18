@@ -6,20 +6,20 @@ import Box from "@mui/material/Box";
 import bannerimg from "../../public/images/Banner-Image.png";
 import Image from "next/image";
 import { Container } from "@mui/material";
-
+import Secsec from "../components/updateseccont";
 const hero = () => {
   const fonts = {
-    fontSize: "clamp(50px, 4vw, 91px)",
+    fontSize: "clamp(50px, 5vw, 91px)",
   };
   const parag = {
     fontSize: "clamp(22px, 1.8vw, 28px)",
   };
   const banimg = {
-    width: "72vw",
+    width: "65vw",
     height: "auto",
   };
   return (
-    <Stack sx={{ minHeight: "100vh" }}>
+    <Stack sx={{ height: "100vh", justifyContent: "space-between" }}>
       <Stack sx={{ zIndex: "1", marginTop: "120px", marginLeft: "30px" }}>
         <Stack sx={{ mb: 2 }}>
           <Typography
@@ -112,11 +112,12 @@ const hero = () => {
           </Link>
         </Stack>
       </Stack>
-      <Stack sx={{ position: "absolute", bottom: "0", right: "0" }}>
+      <Stack sx={{ position: "absolute", bottom: "60px", right: "0" }}>
         <Box component="span">
           <Image style={banimg} src={bannerimg} sx={{}} />
         </Box>
       </Stack>
+      <Secsec />
     </Stack>
   );
 };

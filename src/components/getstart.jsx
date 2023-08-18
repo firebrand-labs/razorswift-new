@@ -22,7 +22,7 @@ const getstart = () => {
         flexDirection: "column",
         alignItems: "center",
         height: "100vh",
-        border: "1px solid",
+        // border: "1px solid",
         justifyContent: "center",
       }}
     >
