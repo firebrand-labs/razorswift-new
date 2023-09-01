@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../styles/globals.css";
 import Herosec from "../components/heroban";
 
 import Whatwe from "../components/whatwedo";
@@ -14,7 +14,7 @@ import Pathways from "../components/pathwyas";
 import Test from "../components/test";
 const page = () => {
   return (
-    <div>
+    <div className="Topcontainer">
       <Layout>
         <Herosec />
 

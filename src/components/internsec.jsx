@@ -8,22 +8,31 @@ import internmain from "../../public/images/placeholder-image.png";
 import internone from "../../public/images/icon-1.svg";
 import Whattoexp from "./whattoexp";
 import data from "../utilities/intern.js";
+import { Container } from "@mui/material";
 
-const internsec = ({ contchnage }) => {
-  console.log(contchnage);
+const internsec = ({ contchange }) => {
+  console.log(contchange.id);
   const imgs = {
     width: "500px",
     height: "initial",
   };
-  // const [selectedId, setSelectedId] = useState(nestedData[0].id);
+
   return (
     <Box
       sx={{
-        backgroundColor: "primary.pinkint",
+        backgroundColor: `${
+          contchange.id == 1
+            ? "primary.pinkcol"
+            : "" || contchange.id == 2
+            ? "primary.drophire"
+            : "" || contchange.id == 3
+            ? "primary.droppart"
+            : ""
+        }`,
         pt: "5%",
         pb: "5%",
-        pl: "3%",
-        pr: "3%",
+        pl: "60px",
+        pr: "60px",
       }}
     >
       <Box
@@ -37,29 +46,28 @@ const internsec = ({ contchnage }) => {
           <Image src={aspiratvect} />
           <Typography
             sx={{
-              fontSize: "55px",
+              fontSize: "clamp(45px,3.5vw,55px)",
               fontFamily: "urbanist",
               fontWeight: "500",
             }}
           >
-            {contchnage.firstsec.toptitleone}
+            {contchange.firstsec.toptitleone}
           </Typography>
           <Typography
             sx={{
-              fontSize: "77px",
+              fontSize: "clamp(65px,5vw,77px)",
               lineHeight: "1.0",
               fontFamily: "urbanist",
               fontWeight: "600",
               mb: "3%",
             }}
           >
-            Jobs.
+            {contchange.firstsec.toptitletwo}
           </Typography>
           <Typography
             sx={{ fontSize: "22px", fontFamily: "urbanist", mb: "5%" }}
           >
-            Whether you're a student or an experienced professional,
-            <br /> everything possible through our corporate cohorts.
+            {contchange.firstsec.toppara}
           </Typography>
           <Box
             sx={{
@@ -81,7 +89,7 @@ const internsec = ({ contchnage }) => {
                 fontFamily: "urbanist",
               }}
             >
-              Explore
+              {contchange.firstsec.button}
             </Link>
           </Box>
         </Box>
@@ -91,7 +99,7 @@ const internsec = ({ contchnage }) => {
         </Box>
       </Box>
       {/* second */}
-      <Whattoexp />
+      <Whattoexp contchangeone={contchange} />
     </Box>
   );
 };

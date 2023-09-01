@@ -3,7 +3,10 @@ import data from "@/utilities/what-to-expect";
 import Image from "next/image";
 import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
-const Whattoexp = () => {
+const Whattoexp = ({ contchangeone }) => {
+  console.log(data);
+  console.log(contchangeone.secondec);
+  const dropdata = contchangeone.secondec;
   const imgsize = {
     width: "15%",
     marginRight: "3%",
@@ -38,7 +41,7 @@ const Whattoexp = () => {
             justifyContent: "end",
           }}
         >
-          {data.map((item) => (
+          {dropdata.map((item) => (
             <Box
               sx={{
                 display: "flex",
@@ -57,7 +60,7 @@ const Whattoexp = () => {
                 <Typography
                   sx={{
                     fontFamily: "urbanist",
-                    fontSize: "28px",
+                    fontSize: "clamp(22px,1.7vw,28px)",
                     fontWeight: "500",
                     lineHeight: 1.0,
                     mb: "5%",
@@ -68,7 +71,7 @@ const Whattoexp = () => {
                 <Typography
                   sx={{
                     fontFamily: "urbanist",
-                    fontSize: "20px",
+                    fontSize: "clamp(17px,1.2vw,20px)",
                     lineHeight: 1.0,
                   }}
                 >

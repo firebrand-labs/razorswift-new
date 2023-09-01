@@ -3,7 +3,7 @@ import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
 import Link from "@mui/material/Link";
 import Image from "next/image";
-import fivemen from "../../public/images/banner-image-2.svg";
+import fivemen from "../../public/images/ready-to.svg";
 const getstart = () => {
   const fonts = {
     fontSize: "clamp(40px, 3vw, 100px)",
@@ -13,6 +13,7 @@ const getstart = () => {
   };
   const lastimg = {
     width: "40vw",
+    height: "clamp(430px, 33.1vw, 700px)",
   };
   return (
     <Box
@@ -39,11 +40,14 @@ const getstart = () => {
         >
           READY TO GET STARTED?
         </Typography>
-        <Typography style={fontstwo} sx={{ fontFamily: "urbanist" }}>
-          Get identified, upskill. Grow your business and brand.
+        <Typography
+          style={fontstwo}
+          sx={{ fontFamily: "urbanist", margin: "20px 0" }}
+        >
+          Hire at scale with the click of a button.
         </Typography>
         <Box sx={{ display: "flex", gap: 5 }}>
-          <Box
+          {/* <Box
             sx={{
               backgroundColor: "primary.main",
               borderRadius: "200px",
@@ -63,7 +67,7 @@ const getstart = () => {
             >
               Build Your Profile
             </Link>
-          </Box>
+          </Box> */}
           <Box
             sx={{
               border: "2px solid",

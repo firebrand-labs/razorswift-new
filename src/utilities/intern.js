@@ -11,7 +11,7 @@ const data = [
       toptitletwo: "Jobs.",
       toppara: `"Whether you're a student or an experienced professional,
         everything possible through our corporate cohorts."`,
-      butto: "Explore",
+      button: "Explore",
     },
     secondec: [
       {
@@ -42,28 +42,66 @@ const data = [
       toptitleone: "Experience Swift",
       toptitletwo: "Hiring.",
       toppara: "AI driven automation for Large scale ",
-      butto: "Ask for Demo",
+      button: "Ask for Demo",
     },
     secondec: [
       {
         image: internone,
-        title: "Job ready talent on day 1",
-        description: "Bridge the gap between education and employability.",
+        title: "Job ready talent on Day 1",
+        description:
+          "Manage skill gap and talent shortage with customized pathways.",
       },
       {
         image: internbulb,
         title: "Unifried",
-        description: "Leverage mentors, corporate cohorts and communities.",
+        description:
+          "Seamless collaboration with talent partners with pathways.",
       },
       {
         image: internplay,
-        title: "Standarad",
-        description: "Job recommendations based on latest trends.",
+        title: "Standardized profiles",
+        description:
+          "Standardized assessments and AI enriched profiles with defined pathways",
       },
       {
         image: internhand,
-        title: "Be a Marquee",
-        description: "Negotiate better with corporate bench mark reports.",
+        title: "Be a Marquee employer",
+        description:
+          "Enhanced exposure and increased recognition among aspirants with corporate pathways",
+      },
+    ],
+  },
+  {
+    id: "3",
+    firstsec: {
+      toptitleone: "Aggregating the Talent ",
+      toptitletwo: "Partner landscape.",
+      toppara: "Collaborate with us to create a robust AI talent marketplace.",
+      button: "Partner with Us",
+    },
+    secondec: [
+      {
+        image: internone,
+        title: "Collaborate for standardization",
+        description:
+          "L&D Partners, assessment partners and recruiters collaboration.",
+      },
+      {
+        image: internbulb,
+        title: "Plug into skill, domain and corporate pathways",
+        description:
+          "Seamless collaboration and streamlined process within pathways.",
+      },
+      {
+        image: internplay,
+        title: "Reduce cost to market",
+        description:
+          "Enhanced exposure and brand recognition among aspirants through AI based recommendations",
+      },
+      {
+        image: internhand,
+        title: "Grow exponentially with our ever growing user base",
+        description: "AI based recommendation of your services to aspirants.",
       },
     ],
   },
