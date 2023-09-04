@@ -81,7 +81,7 @@ const fontaspithree = {
 
 const accordimg = {
   width: "clamp(185px, 14.3vw, 300px)",
-  height: "clamp(180px, 13.9vw, 280px)",
+  height: "clamp(180px, 13.3vw, 280px)",
 };
 
 export default function pathways() {

@@ -33,6 +33,14 @@ const theme = createTheme({
         },
       },
     },
+    breakpoints: {
+      values: {
+        mobile: 0,
+        tab: 768,
+        lap: 1024,
+        desktop: 1200,
+      },
+    },
   },
   // Other theme configurations...
 });

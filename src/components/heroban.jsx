@@ -85,14 +85,12 @@ const hero = () => {
     >
       <Stack sx={{ zIndex: "1", marginTop: "120px", marginLeft: "30px" }}>
         <Stack sx={{ mb: 2 }}>
-          <motion.div
-            viewport={{ once: false }}
-            transition={{ staggerChildren: 1.9 }}
-          >
+          <motion.div transition={{ staggerChildren: 1.9 }}>
             <motion.div
               variants={firstsec}
               initial={"offscreen"}
               whileInView={"onscreen"}
+              viewport={{ once: true }}
             >
               <Typography
                 style={fonts}
@@ -118,6 +116,7 @@ const hero = () => {
               variants={firstsec}
               initial={"offscreen"}
               whileInView={"onscreen"}
+              viewport={{ once: true }}
             >
               <Typography
                 style={fonts}
@@ -136,13 +135,14 @@ const hero = () => {
           </motion.div>
         </Stack>
         <motion.div
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ staggerChildren: 1.9 }}
         >
           <motion.div
             variants={parades}
             initial={"offscreen"}
             whileInView={"onscreen"}
+            viewport={{ once: true }}
           >
             <Typography
               sx={{
@@ -162,13 +162,14 @@ const hero = () => {
           </motion.div>
         </motion.div>
         <motion.div
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ staggerChildren: 1.9 }}
         >
           <motion.div
             variants={parabutton}
             initial={"offscreen"}
             whileInView={"onscreen"}
+            viewport={{ once: true }}
           >
             <Stack
               sx={{
