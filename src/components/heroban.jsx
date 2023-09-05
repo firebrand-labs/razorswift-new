@@ -11,9 +11,9 @@ import Secsec from "../components/updateseccont";
 import { motion } from "framer-motion";
 import data from "../utilities/herosec.js";
 const hero = () => {
-  const fonts = {
-    fontSize: "clamp(65px, 5.5vw, 132px)",
-  };
+  // const fonts = {
+  //   fontSize: "clamp(65px, 5.5vw, 132px)",
+  // };
   const parag = {
     fontSize: "clamp(22px, 1.8vw, 28px)",
   };
@@ -101,7 +101,8 @@ const hero = () => {
                   lineHeight: "1.0",
                   fontFamily: "Bebas Neue",
                   fontSize: {
-                    sm: "clamp(30px, 2.5vw, 40px)",
+                    xs: "clamp(30px, 2.4vw, 40px)",
+                    sm: "clamp(40px, 3.1vw, 50px)",
                     lg: "clamp(65px, 5.5vw, 132px)",
                   },
                 }}
@@ -125,11 +126,15 @@ const hero = () => {
               viewport={{ once: true }}
             >
               <Typography
-                style={fonts}
                 sx={{
                   color: "primary.mainone",
                   lineHeight: "1.0",
                   fontFamily: "Bebas Neue",
+                  fontSize: {
+                    xs: "clamp(30px, 2.4vw, 40px)",
+                    sm: "clamp(40px, 3.1vw, 50px)",
+                    lg: "clamp(65px, 5.5vw, 132px)",
+                  },
                 }}
               >
                 <Box component="span" sx={{ color: "primary.main", pr: 3 }}>
@@ -187,7 +192,7 @@ const hero = () => {
             >
               <Link
                 sx={{
-                  fontSize: 20,
+                  fontSize: { xs: "16px", lg: "20px" },
                   textDecoration: "none",
                   border: "1px solid",
                   borderColor: "primary.light",
@@ -198,13 +203,14 @@ const hero = () => {
                   pb: 0.8,
                   pl: 2,
                   pr: 2,
+                  alignSelf: "center",
                 }}
               >
                 Build Your Profile
               </Link>
               <Link
                 sx={{
-                  fontSize: 20,
+                  fontSize: { xs: "16px", lg: "20px" },
                   textDecoration: "none",
                   border: "1px solid",
                   borderColor: "primary.light",
@@ -213,6 +219,7 @@ const hero = () => {
                   pb: 0.8,
                   pl: 2,
                   pr: 2,
+                  alignSelf: "center",
                 }}
               >
                 Get a Demo
@@ -223,7 +230,7 @@ const hero = () => {
       </Stack>
       <Stack sx={{ position: "absolute", bottom: "50px", right: "0" }}>
         <Box component="span">
-          <Image style={banimg} src={bannerimg} sx={{}} />
+          <Image style={banimg} src={bannerimg} />
         </Box>
       </Stack>
       <motion.div transition={{ staggerChildren: 1.9 }}>

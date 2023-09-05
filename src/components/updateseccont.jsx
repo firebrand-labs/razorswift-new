@@ -19,7 +19,7 @@ const updateseccont = () => {
     >
       <Typography
         component="p"
-        sx={{ fontSize: "28px", fontFamily: "Urbanist" }}
+        sx={{ fontSize: { xs: "16px", lg: "28px" }, fontFamily: "Urbanist" }}
       >
         Check out the newly added Python pathway
       </Typography>
