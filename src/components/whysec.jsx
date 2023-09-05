@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "@mui/material";
 import { Typography } from "@mui/material";
 import Link from "@mui/material/Link";
-// import { Container } from "@mui/material";
+import data from "../utilities/whyrazor";
 const whysec = () => {
   const headfont = {
     fontSize: "clamp(50px, 4vw, 64px)",
@@ -16,6 +16,7 @@ const whysec = () => {
   const numbersecdescription = {
     fontSize: "clamp(10px, 1.1vw, 16px)",
   };
+  console.log(data);
   return (
     <Box
       sx={{
@@ -47,7 +48,7 @@ const whysec = () => {
             mb: "2%",
           }}
         >
-          WHY RAZORSWIFT
+          {data[0].title}
         </Typography>
         <Typography
           style={paraone}
@@ -59,11 +60,7 @@ const whysec = () => {
             textAlign: "justify",
           }}
         >
-          We are a machine learning based dynamic 'digital marketplace' that
-          provides the aspirant talent pool to stay continually competitive
-          relative to the hiring landscape in India. We do this by harnessing
-          our comprehensive knowledge partner ecosystem, which provides for
-          comprehensive mentorship, learning and career progression advisory.
+          {data[0].description}
         </Typography>
         <Typography
           style={paraone}
@@ -74,10 +71,7 @@ const whysec = () => {
             fontFamily: "urbanist",
           }}
         >
-          We use a unique 'affinity algorithm' which provides for
-          identification, assessment and enablement modules resulting in
-          significant process efficiency in curation and hiring, whilst saving
-          significant time and cost for businesses and aspirants.
+          {data[0].descriptiontwo}
         </Typography>
         <Link
           underline="none"

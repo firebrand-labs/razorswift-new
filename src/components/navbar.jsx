@@ -16,6 +16,7 @@ export default function Home() {
         alignItems: "center",
         position: "fixed",
         width: "100vw",
+        zIndex: "20",
       }}
     >
       <Image src={profilePic} alt="logo" />

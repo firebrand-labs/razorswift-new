@@ -1,11 +1,9 @@
 import React from "react";
-import data from "@/utilities/what-to-expect";
+// import data from "@/utilities/what-to-expect";
 import Image from "next/image";
 import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
 const Whattoexp = ({ contchangeone }) => {
-  console.log(data);
-  console.log(contchangeone.secondec);
   const dropdata = contchangeone.secondec;
   const imgsize = {
     width: "15%",

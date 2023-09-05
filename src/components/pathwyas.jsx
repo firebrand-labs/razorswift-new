@@ -7,7 +7,8 @@ import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/system";
-import { pathway, pathwaytwo } from "../utilities/pathway";
+import data from "../utilities/pathway.js";
+import datatwo from "../utilities/pathwaytwo.js";
 import pathwayacc from "../../public/images/pathway-img.svg";
 import Image from "next/image";
 const Accordion = styled((props) => (
@@ -81,7 +82,8 @@ const fontaspithree = {
 
 const accordimg = {
   width: "clamp(185px, 14.3vw, 300px)",
-  height: "clamp(180px, 13.3vw, 280px)",
+  // height: "clamp(180px, 13.3vw, 280px)",
+  height: "clamp(145px, 11.2vw, 255px)",
 };
 
 export default function pathways() {
@@ -93,7 +95,7 @@ export default function pathways() {
   const handleChangeone = (panelone) => (eventone, newExpandedone) => {
     setExpandedone(newExpandedone ? panelone : null); // Update to null when collapsed
   };
-  console.log(pathway);
+
   return (
     <Box sx={{ backgroundColor: "primary.main", padding: "0 50px 20px" }}>
       <Typography
@@ -130,7 +132,7 @@ export default function pathways() {
           >
             Choose your pathway now
           </Typography>
-          {pathway.map(
+          {data.map(
             (
               item,
               index // Add index parameter to map
@@ -142,7 +144,7 @@ export default function pathways() {
                   borderRadius:
                     index === 0
                       ? "40px 40px 0 0"
-                      : index === pathway.length - 1
+                      : index === data.length - 1
                       ? "0px 0px 40px 40px"
                       : "0",
                 }}
@@ -154,7 +156,7 @@ export default function pathways() {
                     borderRadius:
                       index === 0
                         ? "30px 30px 0 0"
-                        : index === pathway.length - 1
+                        : index === data.length - 1
                         ? "0px 0px 40px 40px"
                         : "0",
                   }}
@@ -171,7 +173,9 @@ export default function pathways() {
                       alignItems: "flex-end",
                     }}
                   >
-                    <Typography style={fontdes}>{item.description}</Typography>
+                    <Typography sx={{ marginLeft: "10px" }} style={fontdes}>
+                      {item.description}
+                    </Typography>
                     <Image style={accordimg} src={pathwayacc} />
                   </Box>
                 </AccordionDetails>
@@ -201,7 +205,7 @@ export default function pathways() {
           >
             Craft your pathway now
           </Typography>
-          {pathwaytwo.map(
+          {datatwo.map(
             (
               item,
               index // Add index parameter to map
@@ -213,7 +217,7 @@ export default function pathways() {
                   borderRadius:
                     index === 0
                       ? "40px 40px 0 0"
-                      : index === pathwaytwo.length - 1
+                      : index === datatwo.length - 1
                       ? "0px 0px 40px 40px"
                       : "0",
                 }}
@@ -225,7 +229,7 @@ export default function pathways() {
                     borderRadius:
                       index === 0
                         ? "30px 30px 0 0"
-                        : index === pathwaytwo.length - 1
+                        : index === datatwo.length - 1
                         ? "0px 0px 40px 40px"
                         : "0",
                     backgroundColor: "primary.accord",
@@ -243,7 +247,9 @@ export default function pathways() {
                       alignItems: "flex-end",
                     }}
                   >
-                    <Typography style={fontdes}>{item.description}</Typography>
+                    <Typography sx={{ marginLeft: "10px" }} style={fontdes}>
+                      {item.description}
+                    </Typography>
                     <Image style={accordimg} src={pathwayacc} />
                   </Box>
                 </AccordionDetails>

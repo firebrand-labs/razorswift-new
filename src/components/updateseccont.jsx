@@ -13,7 +13,7 @@ const updateseccont = () => {
         gap: 3,
         backgroundColor: "primary.secbg",
         p: "10px",
-        height: "40px",
+        height: "50px",
         overflowY: "hidden",
       }}
     >
@@ -23,7 +23,7 @@ const updateseccont = () => {
       >
         Check out the newly added Python pathway
       </Typography>
-      <Box component="span">
+      <Box sx={{ marginTop: "10px" }} component="span">
         <Image src={rightarrow} />
       </Box>
     </Box>

@@ -9,6 +9,7 @@ import Image from "next/image";
 import { Container } from "@mui/material";
 import Secsec from "../components/updateseccont";
 import { motion } from "framer-motion";
+import data from "../utilities/herosec.js";
 const hero = () => {
   const fonts = {
     fontSize: "clamp(65px, 5.5vw, 132px)",
@@ -74,6 +75,8 @@ const hero = () => {
       y: 100,
     },
   };
+
+  console.log(data);
   return (
     <Stack
       sx={{
@@ -93,11 +96,14 @@ const hero = () => {
               viewport={{ once: true }}
             >
               <Typography
-                style={fonts}
                 sx={{
                   color: "primary.mainone",
                   lineHeight: "1.0",
                   fontFamily: "Bebas Neue",
+                  fontSize: {
+                    sm: "clamp(30px, 2.5vw, 40px)",
+                    lg: "clamp(65px, 5.5vw, 132px)",
+                  },
                 }}
               >
                 <Box
@@ -153,10 +159,10 @@ const hero = () => {
               }}
             >
               <Box style={parag} component="span" sx={{ lineHeight: 1.0 }}>
-                India's first unified ML enabled marketplace
+                {data[0].title}
               </Box>
               <Box style={parag} component="span" sx={{ lineHeight: 1.0 }}>
-                connecting aspirants with businesses.
+                {data[0].titletwo}
               </Box>
             </Typography>
           </motion.div>
