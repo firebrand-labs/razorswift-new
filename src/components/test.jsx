@@ -126,8 +126,11 @@ export default function Test() {
                 dropdata.map((itemlist) => (
                   <MenuItem key={itemlist.id} value={itemlist.id}>
                     <Typography
-                      style={fontz}
-                      sx={{ fontFamily: "Urbanist", fontWeight: "700" }}
+                      sx={{
+                        fontFamily: "Urbanist",
+                        fontWeight: "700",
+                        fontSize: { xs: "20px", lg: "clamp(25px,2vw,36px)" },
+                      }}
                     >
                       {itemlist.title}
                     </Typography>
