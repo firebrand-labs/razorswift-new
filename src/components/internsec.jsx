@@ -31,8 +31,8 @@ const internsec = ({ contchange }) => {
         }`,
         pt: "5%",
         pb: "5%",
-        pl: "60px",
-        pr: "60px",
+        pl: { xs: "15px", lg: "64px" },
+        pr: { xs: "15px", lg: "64px" },
       }}
     >
       <Box
@@ -43,27 +43,40 @@ const internsec = ({ contchange }) => {
         }}
       >
         <Box sx={{ width: "50%" }}>
-          <Image src={aspiratvect} />
-          <Typography
+          <Box
             sx={{
-              fontSize: "clamp(45px,3.5vw,55px)",
-              fontFamily: "urbanist",
-              fontWeight: "500",
+              display: { xs: "flex" },
+              flexDirection: { xs: "row-reverse", lg: "column" },
+              width: { xs: "100vw", lg: "900px" },
+              alignItems: { xs: "center", lg: "flex-start" },
             }}
           >
-            {contchange.firstsec.toptitleone}
-          </Typography>
-          <Typography
-            sx={{
-              fontSize: "clamp(65px,5vw,77px)",
-              lineHeight: "1.0",
-              fontFamily: "urbanist",
-              fontWeight: "600",
-              mb: "3%",
-            }}
-          >
-            {contchange.firstsec.toptitletwo}
-          </Typography>
+            <Box sx={{ width: { xs: "50vw" } }}>
+              <Image src={aspiratvect} />
+            </Box>
+            <Box sx={{ width: { xs: "50vw" } }}>
+              <Typography
+                sx={{
+                  fontSize: { xs: "20px", lg: "clamp(45px,3.5vw,55px)" },
+                  fontFamily: "urbanist",
+                  fontWeight: "500",
+                }}
+              >
+                {contchange.firstsec.toptitleone}
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: { xs: "30px", lg: "clamp(65px,5vw,77px)" },
+                  lineHeight: "1.0",
+                  fontFamily: "urbanist",
+                  fontWeight: "600",
+                  mb: "3%",
+                }}
+              >
+                {contchange.firstsec.toptitletwo}
+              </Typography>
+            </Box>
+          </Box>
           <Typography
             sx={{ fontSize: "22px", fontFamily: "urbanist", mb: "5%" }}
           >
